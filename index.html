@@ -5,42 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6 Meses de Nós</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #fce4ec;
-            color: #333;
-            margin: 0;
-            padding: 20px;
+            color: #fff;
+            overflow: hidden;
         }
-        h1 {
-            color: #d81b60;
+
+        /* Vídeo de fundo */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
         }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        /* Camada escura para melhorar a leitura */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Ajuste a opacidade aqui */
+            z-index: 0;
+        }
+
+        /* Conteúdo */
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 600px;
             margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
         }
+
+        h1 {
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
         img {
             width: 100%;
             max-width: 400px;
             border-radius: 10px;
             margin: 10px 0;
         }
+
         .footer {
             margin-top: 20px;
             font-size: 14px;
-            color: #666;
         }
     </style>
 </head>
 <body>
+    <!-- Vídeo de fundo -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/refs/heads/main/MicrosoftTeams-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+
+    <!-- Camada escura para contraste -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo principal -->
     <div class="container">
         <h1>6 Meses de Nós</h1>
         <p>Seis meses ao seu lado e cada dia é um novo motivo para sorrir. Que seja só o começo de uma história infinita. Te amo! ❤️</p>
         
-        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image.jpg?raw=true" alt="Foto 1">
-        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image%20(2).jpg?raw=true" alt="Foto 2">
-        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image%20(1).jpg?raw=true" alt="Foto 3">
+        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem1.jpg" alt="Foto 1">
+        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem2.jpg" alt="Foto 2">
+        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem3.jpg" alt="Foto 3">
         
         <div class="footer">Para sempre nós. ❤️</div>
     </div>
