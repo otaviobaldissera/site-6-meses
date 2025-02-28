@@ -16,24 +16,31 @@
             text-align: center;
             color: #fff;
             overflow: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* Vídeo de fundo */
+        /* Vídeo de fundo cobrindo toda a tela */
         .video-container {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             overflow: hidden;
             z-index: -1;
         }
 
         video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
         }
 
         /* Camada escura para melhorar a leitura */
@@ -44,66 +51,5 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.4); /* Ajuste a opacidade aqui */
-            z-index: 0;
-        }
+            z-i
 
-        /* Conteúdo */
-        .container {
-            position: relative;
-            z-index: 1;
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-        }
-
-        h1 {
-            color: #ff4081;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Vídeo de fundo -->
-    <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/microsoftteams-video-3_FgRcxtoH.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-    </div>
-
-    <!-- Camada escura para contraste -->
-    <div class="overlay"></div>
-
-    <!-- Conteúdo principal -->
-    <div class="container">
-        <h1>6 Meses de Nós</h1>
-        <p>Seis meses ao seu lado e cada dia é um novo motivo para sorrir. Que seja só o começo de uma história infinita. Te amo! ❤️</p>
-        
-        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem1.jpg" alt="Foto 1">
-        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem2.jpg" alt="Foto 2">
-        <img src="https://raw.githubusercontent.com/otaviobaldissera/site-6-meses/main/imagens/imagem3.jpg" alt="Foto 3">
-        
-        <div class="footer">Para sempre nós. ❤️</div>
-    </div>
-</body>
-</html>
