@@ -15,7 +15,6 @@
             font-family: Arial, sans-serif;
             text-align: center;
             color: #fff;
-            overflow: hidden;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -50,6 +49,66 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Ajuste a opacidade aqui */
-            z-i
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
 
+        /* Conteúdo */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+
+    <!-- Camada escura para contraste -->
+    <div class="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>6 Meses de Nós</h1>
+        <p>Seis meses ao seu lado e cada dia é um novo motivo para sorrir. Que seja só o começo de uma história infinita. Te amo! ❤️</p>
+        
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Foto 1">
+        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Foto 2">
+        <img src="https://www.w3schools.com/html/img_forest.jpg" alt="Foto 3">
+        
+        <div class="footer">Para sempre nós. ❤️</div>
+    </div>
+</body>
+</html>
