@@ -15,13 +15,10 @@
             font-family: Arial, sans-serif;
             text-align: center;
             color: #fff;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
         }
 
-        /* Vídeo de fundo cobrindo toda a tela */
+        /* Vídeo de fundo */
         .video-container {
             position: fixed;
             top: 0;
@@ -33,23 +30,20 @@
         }
 
         video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            position: absolute;
         }
 
-        /* Camada escura para melhorar a leitura */
+        /* Camada escura para contraste */
         .overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
             z-index: 0;
         }
 
@@ -58,6 +52,7 @@
             position: relative;
             z-index: 1;
             max-width: 600px;
+            margin: auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 15px;
@@ -67,10 +62,11 @@
         h1 {
             color: #ff4081;
             margin-bottom: 10px;
+            font-size: 36px; /* Aumentei o tamanho */
         }
 
         p {
-            font-size: 18px;
+            font-size: 24px; /* Aumentei o tamanho */
             margin-bottom: 15px;
         }
 
@@ -83,15 +79,15 @@
 
         .footer {
             margin-top: 20px;
-            font-size: 14px;
+            font-size: 18px; /* Aumentei o tamanho */
         }
     </style>
 </head>
 <body>
     <!-- Vídeo de fundo -->
     <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <video autoplay loop muted>
+            <source src="https://github.com/otaviobaldissera/site-6-meses/raw/main/microsoftteams-video-3_FgRcxtoH.mp4" type="video/mp4">
             Seu navegador não suporta vídeos.
         </video>
     </div>
@@ -104,9 +100,9 @@
         <h1>6 Meses de Nós</h1>
         <p>Seis meses ao seu lado e cada dia é um novo motivo para sorrir. Que seja só o começo de uma história infinita. Te amo! ❤️</p>
         
-        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Foto 1">
-        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Foto 2">
-        <img src="https://www.w3schools.com/html/img_forest.jpg" alt="Foto 3">
+        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image.jpg?raw=true" alt="Foto 1">
+        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image%20(2).jpg?raw=true" alt="Foto 2">
+        <img src="https://github.com/otaviobaldissera/site-6-meses/blob/main/Image%20(1).jpg?raw=true" alt="Foto 3">
         
         <div class="footer">Para sempre nós. ❤️</div>
     </div>
